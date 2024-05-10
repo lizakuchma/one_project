@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання5</title>
+</head>
+<body>
+    <script>
+        document.write("Math.pow ");
+        let a = prompt('Введіть число для a ');
+        a = Number(a);
+        let n = prompt('Введіть ступінь ');
+        n = Number(n);
+        let b = Math.pow(a, n);
+        document.write("   a="+a+"  n="+n+"   Результат "+b);
+        //
+        document.write("<br> Array.pop ");
+        let arr = ['a', 'b', 'c', 'd', 'e'];
+        document.write('<br>'+arr+'<br>');
+        let del = arr.pop();
+        document.write("Масив "+arr+'<br>');
+        document.write("Видалили з масиву "+del+'<br>');
+        //
+        document.write("Array.push ");
+        let arr2 = ['a', 'b', 'c', 'd', 'e'];
+        document.write(arr2+'<br>');
+        arr2.push('1','2');
+        document.write("Масив "+arr2+'<br>');
+        //
+        document.write("Array.shift ");
+        let arr3 = ['a', 'b', 'c', 'd', 'e'];
+        document.write(arr3+'<br>');
+        del = arr3.shift();
+        document.write("Масив "+arr3+'<br>');
+        document.write("Видалили з масиву "+del+'<br>');
+        //
+        //
+        document.write("Array.slice ");
+        let arr4 = ['a', 'b', 'c', 'd', 'e'];
+        document.write(arr+'<br>');
+        let c = arr4.slice(0,3);
+        document.write("Зріз масиву "+c+'<br>');
+        document.write("Масив в цілому "+arr4+'<br>');
+
+    </script>
+</body>
+</html>

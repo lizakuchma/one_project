@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 3</title>
+    <style>
+        table{
+            border : 1px solid black;
+            font-size: 20px;
+        }
+        .box{
+            background: lightgreen;
+            color: black;
+            text-align: center;
+        }
+        td,th{
+            padding: 5px 5px 5px 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var a = prompt("Введіть значення для a: ")
+        var b = prompt("Введіть значення для b: ")
+        var h = prompt("Введіть значення для h: ")
+        a = Number(a);
+        b = Number(b);
+        h = Number(h);
+
+        document.write("<table>");
+        document.write("<tr class='box'>");
+        document.write("<th>Радіус</th><th>Площа кола</th><th>Довжина кільця</th>");
+        document.write("</tr>");
+        var r = a;
+        var toexit = false;
+        do {
+            document.write("<tr class ='box'>");
+            let s = Math.PI*r*r;
+            let l = 2*Math.PI*r;
+            document.write("<td>"+r.toFixed(3).toString()+"</td><td>"+s.toFixed(4).toString()+"</td><td>"+l.toFixed(5).toString()+"</td>");
+            document.write("</tr>");
+            if (toexit) break;
+            if (r+h>b) { h = b - r; r=b; toexit=true;}
+            else r = r + h;
+            console.log("r "+r+"  h "+h);
+        } while (true)
+        document.write("</table>")
+    </script>
+</body>
+</html>

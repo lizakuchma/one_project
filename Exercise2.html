@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 2</title>
+    <style>
+        table{
+            border : 1px solid black;
+            font-size: 20px;
+        }
+        .data{
+            background: lightgreen;
+            color: black;
+            text-align: center;
+        }
+        .box {
+            background: blue;
+            color: brown;
+        }
+        td,th{
+            padding: 5px 5px 5px 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        a = prompt("Введіть a")
+        b = prompt("Введіть b")
+        a = Number(a)
+        b = Number(b)
+        document.write("<table class='box'>")
+        for (var k = 1; k<=b; k++) {
+            document.write("<tr class='data'>")
+            for (let mnoz = 1; mnoz<=a; mnoz++) {
+                document.write("<td>")
+                document.write((k*mnoz).toString())
+                document.write("</td>")
+            }
+            document.write("</tr>")
+        }
+        document.write("</table>")
+    </script>
+</body>
+</html>

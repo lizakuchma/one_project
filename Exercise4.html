@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 4</title>
+    <style>
+        table{
+            border : 1px solid black;
+            font-size: 20px;
+        }
+        .box{
+            background: lightblue;
+            color: black;
+            text-align: center;
+        }
+        td,th{
+            padding: 5px 5px 5px 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let a = 123;
+        let b = 123.4567;
+        a = Number(a);
+        document.write("<table>");
+        document.write("<tr class='box'>");
+        let c = Number(a.toPrecision(6))+Number(a.toPrecision(2));
+        document.write("<td>"+ a + "</td>" + "<td>" + typeof a + "</td>" + "<td>"+ a.toExponential(4) + "</td>" + "<td>" + a.toFixed(3) + "</td>" + "<td>"+ a.toPrecision(4) + "<td>" + c.toPrecision(8) + "</td>");
+        document.write("</tr>");
+        document.write('<br>');
+        b = Number(b);
+        document.write("<tr class='box'>");
+        let d = Number(b.toPrecision(5))+Number(b.toPrecision(3));
+        document.write("<td>"+ b + "</td>" + "<td>" + typeof b + "</td>" + "<td>"+ b.toExponential(4) + "</td>" + "<td>" + b.toFixed(2) + "</td>" + "<td>"+ b.toPrecision(3) + "<td>" + d.toPrecision(9) + "</td>");
+        document.write("</tr>");
+    </script>
+</body>
+</html>

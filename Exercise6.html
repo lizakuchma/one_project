@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання6</title>
+</head>
+<body>
+    <script>
+    var fullName = "Кучма Єлизавета Олегівна";
+    var length = fullName.length;
+    var upperCaseFullName = fullName.toUpperCase();
+
+    var lowerCaseFullName = fullName.toLowerCase();
+    var combinedStrings = upperCaseFullName + lowerCaseFullName;
+    var replacedString = combinedStrings.replace("Кучма Єлизавета Олегівна", " ПІБ");
+    var birthDate = new Date("2005-10-14");
+    var dayOfWeek = birthDate.toLocaleDateString("uk-UA", { weekday: "long" });
+    var ageInHours = (Date.now() - birthDate.getTime()) / (1000 * 60 * 60);
+    var ageInMinutes = ageInHours * 60;
+    var ageInSeconds = ageInMinutes * 60;
+
+    document.write("Вихідний рядок: " + fullName + "<br>");
+    document.write("Рядок у верхньому регістрі: " + upperCaseFullName + "<br>");
+    document.write("Рядок у нижньому регістрі: " + lowerCaseFullName + "<br>");
+    document.write("Поєднані рядки: " + combinedStrings + "<br>");
+    document.write("Замінений рядок: " + replacedString + "<br>");
+    document.write("День народження: " + dayOfWeek + "<br>");
+    document.write("Вік у годинах: " + ageInHours + "<br>");
+    document.write("Вік у хвилинах: " + ageInMinutes + "<br>");
+    document.write("Вік у секундах: " + ageInSeconds + "<br>");
+    </script>
+   </body>
+</html>
